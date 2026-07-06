@@ -1,11 +1,48 @@
-#app-mount::before {
+/* Fond Subaru Fire sur toutes les couches Discord */
+#app-mount,
+#app-mount::before,
+.app__160d8,
+.layers__1c917,
+.bg__7b3e0,
+.container__037ed,
+.baseLayer__8fda3 {
+  background: transparent !important;
+  background-image: url("https://i.imgur.com/q7evtad.png") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Discord transparent */
+html, body {
+  background: transparent !important;
+}
+
+/* Overlay rouge feu */
+#app-mount::after {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: url("https://files.catbox.moe/bcma7k.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: rgba(255, 0, 0, 0.40);
+  mix-blend-mode: multiply;
   z-index: -1;
-  pointer-events: none;
+}
+
+/* Panneaux transparents */
+.theme-dark, .theme-light,
+.container-2RRFHK,
+.chatContent-3KubbW,
+.sidebar-1tnWFu,
+.membersWrap-3NUR2t,
+.scroller-3X7KbA,
+.content-1SgpWY {
+  background: transparent !important;
+}
+
+/* Glow rouge */
+.markup-eYLPri,
+.username-3JL4Kh,
+.title-338goq,
+.name-3Uvkvr {
+  text-shadow: 0 0 6px rgba(255, 40, 40, 0.7);
 }
