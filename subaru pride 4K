@@ -1,0 +1,51 @@
+/* --- Subaru Pride IF — Static HD Theme (Strix) --- */
+
+/* Fond statique HD */
+#app-mount::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("https://cdn.discordapp.com/attachments/1502462597956505776/1523690923295375530/subaru_pride_4K_Calities.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Overlay sombre pour lisibilité */
+#app-mount::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+}
+
+/* Transparence propre (ne casse pas Discord) */
+.theme-dark, .theme-light,
+.container-2RRFHK,
+.chatContent-3KubbW,
+.sidebar-1tnWFu,
+.membersWrap-3NUR2t {
+  background: transparent !important;
+}
+
+/* Accent violet/rouge façon Pride IF */
+:root {
+  --accent: #b300ff;
+  --text-normal: #ffffff;
+  --text-muted: #d38cff;
+}
+
+/* Bordures légères */
+* {
+  border-color: var(--accent) !important;
+}
+
+/* Effet vignette */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
