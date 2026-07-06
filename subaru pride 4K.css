@@ -13,13 +13,13 @@
   pointer-events: none;
 }
 
-/* Overlay rouge feu (sans violet) */
+/* Overlay rouge feu */
 #app-mount::after {
   content: "";
   position: fixed;
   inset: 0;
-  background: rgba(255, 0, 0, 0.40); /* rouge pur */
-  mix-blend-mode: multiply; /* renforce le rouge, enlève le violet */
+  background: rgba(255, 0, 0, 0.40);
+  mix-blend-mode: multiply;
   z-index: -1;
 }
 
@@ -32,11 +32,11 @@
   background: transparent !important;
 }
 
-/* Accent rouge pur */
+/* Accent rouge */
 :root {
-  --accent: #ff1a1a;        /* rouge feu */
-  --text-normal: #ffffff;   /* blanc */
-  --text-muted: #ff4d4d;    /* rouge clair */
+  --accent: #ff1a1a;
+  --text-normal: #ffffff;
+  --text-muted: #ff4d4d;
 }
 
 /* Bordures rouges */
@@ -54,7 +54,7 @@ body::after {
   z-index: -1;
 }
 
-/* Lueur rouge sur les textes */
+/* Lueur rouge */
 .markup-eYLPri, .username-3JL4Kh, .title-338goq {
   text-shadow: 0 0 6px rgba(255, 40, 40, 0.7);
 }
