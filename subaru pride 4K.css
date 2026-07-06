@@ -1,4 +1,4 @@
-/* --- Subaru Pride IF — Static HD Theme (Strix) --- */
+/* --- Subaru Pride IF — Fire Red Theme (Strix) --- */
 
 /* Fond statique HD */
 #app-mount::before {
@@ -13,12 +13,13 @@
   pointer-events: none;
 }
 
-/* Overlay sombre pour lisibilité */
+/* Overlay rouge feu */
 #app-mount::after {
   content: "";
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(255, 0, 0, 0.35); /* rouge feu */
+  mix-blend-mode: overlay; /* intensifie les couleurs */
   z-index: -1;
 }
 
@@ -31,21 +32,20 @@
   background: transparent !important;
 }
 
-/* Accent violet/rouge façon Pride IF */
+/* Accent rouge feu */
 :root {
-  --accent: #b300ff;
+  --accent: #ff2a2a;
   --text-normal: #ffffff;
-  --text-muted: #d38cff;
+  --text-muted: #ff8080;
 }
 
-/* Bordures légères */
+/* Bordures rouges */
 * {
   border-color: var(--accent) !important;
 }
 
-/* Effet vignette */
+/* Effet vignette sombre */
 body::after {
   content: "";
   position: fixed;
-  inset: 0;
-  pointer-events: none;
+  inset
